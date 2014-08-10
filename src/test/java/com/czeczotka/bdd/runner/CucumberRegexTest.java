@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         format = { "pretty", "html:target/cucumber" },
         glue = "com.czeczotka.bdd.steps",
-        features = "classpath:cucumber/calculator.feature"
+        features = "classpath:cucumber/regex.feature"
 )
-public class RunCalculatorTest {
+public class CucumberRegexTest {
 }
