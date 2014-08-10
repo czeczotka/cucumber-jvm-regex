@@ -1,8 +1,8 @@
-cucumber-jvm-maven
+cucumber-jvm-regex
 ==================
 
-Cucumber JVM with Maven application.
+Cucumber JVM regular expressions demo.
 
 See my blog for details:
 
-http://blog.czeczotka.com/2014/07/22/cucumber-jvm-with-maven-in-minutes/
+// TODO - not published yet, stay tuned
