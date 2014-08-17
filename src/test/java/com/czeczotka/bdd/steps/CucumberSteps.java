@@ -16,6 +16,11 @@ public class CucumberSteps {
         System.out.println ("Step definition exact match");
     }
 
+    @Given("^I have a (?:tasty|nasty|rusty) cucumber step$")
+    public void i_have_a_X_cucumber_step() throws Throwable {
+        System.out.println ("Step definition with a non-capturing group");
+    }
+
     @Given("^I have (\\d+) (.*) in my basket$")
     public void i_have_in_my_basket(int number, String veg) throws Throwable {
         System.out.println(format("I have {0} {1} in my basket", number, veg));
