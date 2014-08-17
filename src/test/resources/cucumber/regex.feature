@@ -22,3 +22,9 @@ Feature: Regular expressions in step definitions
    Given There is 1 ox fed by 4 persons
    Given There are 3 oxen fed by 5 people
 
+ Scenario: Data tables
+   Given I have the following order
+     | vegetable | amount | cost |
+     | cucumber  |   4    |  10  |
+     | carrot    |   5    |   6  |
+     | potato    |   6    |   4  |
