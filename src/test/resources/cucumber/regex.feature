@@ -13,3 +13,12 @@ Feature: Regular expressions in step definitions
 
   Scenario: Capture integers and strings
     Given I have 5 carrots in my basket
+
+  Scenario: Singular and plural
+   Given There is 1 cat fed by 1 person
+   Given There are 2 cats fed by 1 person
+   Given There are 2 cats fed by 2 persons
+   Given There are 2 cats fed by 3 people
+   Given There is 1 ox fed by 4 persons
+   Given There are 3 oxen fed by 5 people
+

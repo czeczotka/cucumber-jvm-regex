@@ -25,4 +25,9 @@ public class CucumberSteps {
     public void i_have_in_my_basket(int number, String veg) throws Throwable {
         System.out.println(format("I have {0} {1} in my basket", number, veg));
     }
+
+    @Given("^There (?:is|are) (\\d+) (?:cats?|ox|oxen) fed by (\\d+) (?:persons?|people)$")
+    public void animals_fed_by_people(int animals, int persons) throws Throwable {
+        System.out.println(format("{0} animal(s) fed by {1} person(s)", animals, persons));
+    }
 }
