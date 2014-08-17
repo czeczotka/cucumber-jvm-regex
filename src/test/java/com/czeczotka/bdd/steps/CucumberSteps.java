@@ -1,9 +1,11 @@
 package com.czeczotka.bdd.steps;
 
+import com.czeczotka.bdd.domain.OrderItem;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 
+import java.util.List;
 import java.util.Map;
 
 import static java.text.MessageFormat.format;
@@ -40,6 +42,16 @@ public class CucumberSteps {
             String vegetable = map.get("vegetable");
             String amount = map.get("amount");
             String cost = map.get("cost");
+            System.out.println (format("Order of {0} {1}s at the cost of {2}", amount, vegetable, cost));
+        }
+    }
+
+    @Given("^I have another order$")
+    public void i_have_another_order(List<OrderItem> list) throws Throwable {
+        for (OrderItem orderItem : list) {
+            String vegetable = orderItem.getVegetable ();
+            int amount = orderItem.getAmount();
+            int cost = orderItem.getCost ();
             System.out.println (format("Order of {0} {1}s at the cost of {2}", amount, vegetable, cost));
         }
     }

@@ -28,3 +28,10 @@ Feature: Regular expressions in step definitions
      | cucumber  |   4    |  10  |
      | carrot    |   5    |   6  |
      | potato    |   6    |   4  |
+
+ Scenario: List of domain objects
+   Given I have another order
+     | vegetable | amount | cost |
+     | cucumber  |   4    |  10  |
+     | carrot    |   5    |   6  |
+     | potato    |   6    |   4  |
